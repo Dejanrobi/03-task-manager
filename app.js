@@ -29,7 +29,7 @@ app.use(errorHandlerMiddleware)
 
 
 // setting the port variable
-const port = 3000
+const port = process.env.PORT || 3000
 
 // starting the server once we connect to the database
 // the connectDB function returns a response
